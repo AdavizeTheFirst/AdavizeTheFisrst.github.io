@@ -1,0 +1,123 @@
+@font-face {font-family: "Agency FB"; src: url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.eot"); src: url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.woff") format("woff"), url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/70777e6bd210190350f7c92395c1860f.svg#Agency FB") format("svg"); }
+@font-face {font-family: "Agency FB Bold"; src: url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.eot"); src: url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.woff") format("woff"), url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/356e1c3e737c1bf31dea2ce604eec3ab.svg#Agency FB") format("svg"); }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    transition: 350ms;
+}
+body{
+    background: transparent -ms-inear-gradient(25deg, #93AAC2 0%, #8DB5B9 30%, #4BA5B8 53%, #9762C6 63%, #896FD2 80%, #58A8B8 88%, #98C8CF 100%) 0% 0% no-repeat padding-box;
+    background: transparent -moz-linear-gradient(25deg, #93AAC2 0%, #8DB5B9 30%, #4BA5B8 53%, #9762C6 63%, #896FD2 80%, #58A8B8 88%, #98C8CF 100%) 0% 0% no-repeat padding-box;
+    background: transparent -webkit-linear-gradient(25deg, #93AAC2 0%, #8DB5B9 30%, #4BA5B8 53%, #9762C6 63%, #896FD2 80%, #58A8B8 88%, #98C8CF 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(25deg, #93AAC2 0%, #8DB5B9 30%, #4BA5B8 53%, #9762C6 63%, #896FD2 80%, #58A8B8 88%, #98C8CF 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    min-height: 100vh;
+    font-family: "Agency FB", Arial, Helvetica, sans-serif;
+}
+.bold {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: white;
+    padding: 10px;
+    height: 400px;
+    width: 40%;
+    border: 60px;
+    margin-top: 80px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 10px #1826EC4D;
+    border: 1.5px solid #929292;
+}
+#timeBox {
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid rgb(167, 161, 161);
+    box-shadow: 0px 3px 6px #0000005C;
+}
+#timeBox #time {
+    font-size: 50px;
+}
+#timeBox #country {
+    font-size: 21px;
+}
+.headingContainer {
+    align-items: center;    
+    width: fit-content;
+    display: flex;
+}
+.headingContainer h1 {
+    color: rgb(84, 115, 143);
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: "Agency FB Bold", Arial, Helvetica, sans-serif;
+}
+.tagL  {
+    margin-right: 25px;
+}
+.searchContainer {
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 325px;
+}
+#search{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid rgb(140, 142, 148);
+    font-family: "Agency FB", Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-radius: 15px;
+    height: 100%;
+    outline-style: none;
+    text-indent: 20px;
+    font-size: 18px;
+    align-self: center;
+}
+#suggestion {  
+    top: 38px;
+    position: absolute;
+    background-color: rgb(249, 253, 255);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 200px;
+    width: 100%;
+} 
+.suggest {
+    border-bottom: 1px solid rgb(231, 230, 230);
+    padding-left: 7px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.suggest:hover {
+    background-color: rgb(219, 213, 213);
+    cursor: pointer;
+}
+@media only screen and (max-width: 850px){
+    .container {
+        width: 74vw;
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .container {
+        margin-top: 30px;
+        width: 80vw;
+        height: 500px;
+    }
+    .searchContainer {
+        width: 260px;
+    }
+}
