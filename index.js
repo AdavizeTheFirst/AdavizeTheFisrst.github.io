@@ -73,8 +73,8 @@ document.getElementById("search").addEventListener("change", function(e){
 document.getElementById("container").addEventListener("click", function(e){
       if(e.target.className.includes("suggest")){
             focusCountry = e.target.innerText;
-            getJson(`http://api.timezonedb.com/v2.1/get-time-zone?key=3Q1CMQJGIFQW&format=json&by=zone&zone=${data[e.target.id].zone}&fields=formatted`, setUI)
+            getJson(`https://api.timezonedb.com/v2.1/get-time-zone?key=3Q1CMQJGIFQW&format=json&by=zone&zone=${data[e.target.id].zone}&fields=formatted`, setUI)
             e.target.parentElement.innerHTML = ''
       }
 })
-getJson(`http://api.timezonedb.com/v2.1/get-time-zone?key=3Q1CMQJGIFQW&format=json&by=zone&zone=Africa/Lagos&fields=formatted`, setUI)
+getJson(`https://api.timezonedb.com/v2.1/get-time-zone?key=3Q1CMQJGIFQW&format=json&by=zone&zone=Africa/Lagos&fields=formatted`, setUI)
