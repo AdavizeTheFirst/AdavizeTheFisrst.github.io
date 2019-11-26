@@ -6,10 +6,6 @@
     padding: 0;
     font-size: 20px;
     font-weight: normal;
-    -webkit-transition-duration: 400ms;
-    -ms-transition-duration: 400ms;
-    -moz-transition-duration: 400ms;
-    transition-duration: 400ms;
 }
 body{
     background: transparent -ms-inear-gradient(25deg, #93AAC2 0%, #8DB5B9 30%, #4BA5B8 53%, #9762C6 63%, #896FD2 80%, #58A8B8 88%, #98C8CF 100%) 0% 0% no-repeat padding-box;
@@ -21,7 +17,6 @@ body{
     justify-content: center; 
     min-height: 100vh;
     font-family: "Agency FB", Arial, Helvetica, sans-serif;
-    transition: 350ms;
 }
 .bold {
     font-family: Arial, Helvetica, sans-serif;
@@ -39,9 +34,12 @@ body{
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 3px 10px #1826EC4D;
-    border: 1.5px solid #929292;
+    border: 1.5px solid #929292;  
+    transition: 1s;  
+    animation: starty 4s ease-in 0s;
 }
 #timeBox {
+    transition: 400ms; 
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
@@ -123,5 +121,15 @@ body{
     }
     .searchContainer {
         width: 260px;
+    }
+}
+
+
+@keyframes starty {
+    form {
+       transform: translateY(-80px)
+    }
+    to {
+        transform: translateY(0) ;
     }
 }
